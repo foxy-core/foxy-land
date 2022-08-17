@@ -7,9 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        ubuntu: ['Ubuntu'],
-        manrope: ['Manrope'],
-        montserrat: ['Montserrat'],
+        syne: ['Syne'],
+        'dm-sans': ['DMSans'],
       },
       colors: {
         'x-bg': '#222',

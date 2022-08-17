@@ -3,15 +3,7 @@
 @tailwind utilities;
 
 body {
-  background: #222;
-  background: linear-gradient(90deg, #222 60%, rgba(255,255,255) 60%);
-}
-
-@media screen and (max-width: 1279px) {
-  body {
-    background: none #222;
-  }
-  
+  background: none #222;
 }
 
 @layer base {
@@ -26,43 +18,39 @@ body {
   }
 
   h1 {
-    @apply font-ubuntu text-4xl xl:text-6xl 2xl:text-8xl leading-tight;
+    @apply font-syne text-4xl xl:text-6xl 2xl:text-9xl;
   }
 
-  h2,
+  h2 {
+    @apply font-dm-sans text-xl xl:text-3xl;
+  }
+
   h3,
   h4,
   h5,
   h6 {
-    @apply font-manrope text-xl xl:text-3xl;
+    @apply font-syne text-xl xl:text-3xl;
   }
 
   h3 {
-    @apply text-x-orange-300
+    @apply text-x-orange-300;
   }
 
   p {
-    @apply font-montserrat;
+    @apply font-syne;
   }
 }
 
 @font-face {
-  font-family: 'Ubuntu';
-  src: url('../assets/fonts/Ubuntu/Ubuntu-Medium.ttf');
-  font-style: normal;
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../assets/fonts/Montserrat/Montserrat-Bold.ttf');
+  font-family: 'Syne';
+  src: url('../assets/fonts/Syne/Syne-Bold.woff2');
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
-  font-family: 'Manrope';
-  src: url('../assets/fonts/Manrope/Manrope-Regular.ttf');
+  font-family: 'DMSans';
+  src: url('../assets/fonts/DMSans/DMSans-Regular.woff2');
   font-style: normal;
   font-weight: 400;
 }
