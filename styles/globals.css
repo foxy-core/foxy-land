@@ -37,7 +37,7 @@ body {
   }
 
   p {
-    @apply font-syne;
+    @apply font-dm-sans text-lg 2xl:text-3xl;
   }
 }
 

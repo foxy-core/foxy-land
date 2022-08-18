@@ -15,7 +15,10 @@ module.exports = {
         'x-white': '#F0F0F0',
         'x-orange-300': '#FE984E',
         'x-orange-400': '#FF740F',
+        'x-gray-300': '#D9D9D9',
+        'x-gray-400': '#BCBCBC'
       },
+      
     },
   },
   plugins: [require('@tailwindcss/typography')],

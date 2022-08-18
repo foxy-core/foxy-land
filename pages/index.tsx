@@ -22,14 +22,12 @@ const Home = () => {
         <meta name='language' content='en' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <article className='grid grid-cols-3'>
-        <section className='py-40 col-span-2'>
+      <article className='grid grid-cols-3 place-items-center pb-32 px-12'>
+        <section className='col-span-2 pb-40'>
           <h3 className='tracking-wide'>Join us now, it’s free!</h3>
-          <h1 className='pb-6'>
-            Made for people to connect
-          </h1>
-          <h2 className='pb-2'>
-            Brand-new dating app, that really brings you more freedom
+          <h1 className='pb-6'>Made for people to connect</h1>
+          <h2 className='pb-2 text-x-gray-400'>
+            Dating app that really brings you more freedom
           </h2>
         </section>
         <section className='scale-[.7] col-span-1 xl:scale-75 2xl:scale-90 rotate-0 xl:rotate-[6deg]'>

@@ -9,7 +9,7 @@ const Button: React.FC<
     <button
       type={isSubmit ? 'submit' : 'button'}
       onClick={() => onClick?.()}
-      className={`rounded-3xl bg-x-orange-400 bg-opacity-80 transition-all hover:bg-orange-500 ${
+      className={`text-xl rounded-xl bg-x-orange-400 bg-opacity-80 transition-all hover:bg-orange-500 ${
         className || ''
       }`}
     >
