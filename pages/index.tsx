@@ -8,10 +8,41 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Foxy 🔥</title>
+        <title>Foxy App — Date, chat and make relationships</title>
+        <meta
+          name='title'
+          content='Foxy App — Date, chat and make relationships'
+        />
         <meta
           name='description'
-          content='Foxy Dating. Local service for people to connect'
+          content="Foxy — dating service from Siberia. Join us now, it's easy and free! It's made for people to connect!"
+        />
+
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content='https://talkiiing.ru/' />
+        <meta
+          property='og:title'
+          content='Foxy App — Date, chat and make relationships'
+        />
+        <meta
+          property='og:description'
+          content="Foxy — dating service from Siberia. Join us now, it's easy and free! It's made for people to connect!"
+        />
+        <meta property='og:image' content='https://talkiiing.ru/preview.jpg' />
+
+        <meta property='twitter:card' content='summary_large_image' />
+        <meta property='twitter:url' content='https://talkiiing.ru/' />
+        <meta
+          property='twitter:title'
+          content='Foxy App — Date, chat and make relationships'
+        />
+        <meta
+          property='twitter:description'
+          content="Foxy — dating service from Siberia. Join us now, it's easy and free! It's made for people to connect!"
+        />
+        <meta
+          property='twitter:image'
+          content='https://talkiiing.ru/preview.jpg'
         />
         <meta
           name='keywords'
