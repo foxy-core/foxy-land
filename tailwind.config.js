@@ -7,18 +7,20 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        syne: ['Syne'],
-        'dm-sans': ['DMSans'],
+        syne: ['Syne', 'display', 'sans-serif'],
+        mont: ['Montserrat', 'sans-serif'],
+        smuy: ['"Seymour One"', 'sans-serif'],
       },
       colors: {
         'x-bg': '#222',
         'x-white': '#F0F0F0',
-        'x-orange-300': '#FE984E',
-        'x-orange-400': '#FF740F',
+        'x-orange': {
+          300: '#FE984E',
+          400: '#FF740F',
+        },
         'x-gray-300': '#D9D9D9',
-        'x-gray-400': '#BCBCBC'
+        'x-gray-400': '#BCBCBC',
       },
-      
     },
   },
   plugins: [require('@tailwindcss/typography')],

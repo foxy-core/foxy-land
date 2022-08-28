@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,26 +21,22 @@ body {
   }
 
   h1 {
-    @apply font-syne text-4xl xl:text-6xl 2xl:text-9xl;
+    @apply font-syne text-3xl xl:text-5xl 2xl:text-8xl;
   }
 
   h2 {
-    @apply font-dm-sans text-xl xl:text-3xl;
+    @apply font-mont text-xl xl:text-3xl;
   }
 
   h3,
   h4,
   h5,
   h6 {
-    @apply font-syne text-xl xl:text-3xl;
-  }
-
-  h3 {
-    @apply text-x-orange-300;
+    @apply font-smuy text-xl xl:text-2xl;
   }
 
   p {
-    @apply font-dm-sans text-lg 2xl:text-3xl;
+    @apply font-mont;
   }
 }
 

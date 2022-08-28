@@ -4,9 +4,9 @@ import { Header } from '@/components/Header'
 
 const MainLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <div className='flex flex-col justify-between min-h-screen'>
+    <div className='flex flex-col justify-between'>
       <Header />
-      <main className='mb-auto'>{children}</main>
+      <main>{children}</main>
       <Footer />
     </div>
   )

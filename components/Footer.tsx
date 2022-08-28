@@ -1,29 +1,33 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import twitter from '@/assets/images/twitter.svg'
-import github from '@/assets/images/github.svg'
+import Twitter from '@/assets/images/twitter.svg'
+import Github from '@/assets/images/github.svg'
 
 export const Footer = () => {
   return (
-    <footer className='bg-x-gray-300 bg-opacity-[.05]'>
-      <div className='w-fit mx-auto'>
+    <footer className='w-full bg-x-gray-300 bg-opacity-[.05] py-4'>
+      <div className='flex flex-col space-y-6 items-center pt-4'>
         <Link href='#b'>
-          <p className='cursor-pointer text-center py-4'>Terms of Use</p>
+          <p className='cursor-pointer text-center'>Terms of Use</p>
         </Link>
-        <div className='flex gap-8 justify-center py-4'>
-          <div className='cursor-pointer scale-150'>
+        <div className='flex space-x-6 items-center'>
+          <div className='cursor-pointer'>
             <Link href='#b'>
-              <Image src={twitter} alt='twitterIcon' />
+              <Twitter className='h-6 w-6' />
             </Link>
           </div>
-          <div className='cursor-pointer scale-150'>
-            <Link href='#b'>
-              <Image src={github} alt='githubIcon' />
+          <div className='cursor-pointer'>
+            <Link href='#b' className='cursor-pointer'>
+              <Github className='h-6 w-6' />
             </Link>
           </div>
         </div>
+        <p className='text-x-gray-400 text-center text-sm'>
+          Foxy Core, 2022
+          <br />
+          All rights reserved.
+        </p>
       </div>
-      <p className='text-x-gray-400 text-right pr-12'>Foxy Core, 2022</p>
     </footer>
   )
 }
