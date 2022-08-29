@@ -1,5 +1,12 @@
 import Logo from '@/assets/images/logoBig.svg'
 import Button from '@/components/Button/Button.component'
+import { $fetch } from 'ohmyfetch'
+
+const sendButtonClick = () =>
+  $fetch('https://foxy.s.talkiiing.ru/api/metrics/buttonClickEvent', {
+    method: 'POST',
+    body: { delay: performance.now() },
+  })
 
 export const UnderConstruction = () => {
   return (
@@ -19,7 +26,12 @@ export const UnderConstruction = () => {
         прислал напоминалку, когда мы откроемся!
       </span>
 
-      <Button onClick={() => window.open('https://t.me/FoxyAuthBot')}>
+      <Button
+        onClick={() => {
+          window.open('https://t.me/FoxyAuthBot')
+          sendButtonClick()
+        }}
+      >
         <p className='px-7 py-2 font-mont text-lg font-bold'>
           Перейти в Telegram
         </p>

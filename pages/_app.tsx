@@ -14,6 +14,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       () =>
         $fetch('https://foxy.s.talkiiing.ru/api/metrics/landingOpenEvent', {
           method: 'POST',
+          body: {
+            ua: navigator.userAgent,
+          },
         }),
       3000,
     )
