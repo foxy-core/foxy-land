@@ -9,7 +9,6 @@ module.exports = {
       fontFamily: {
         syne: ['Syne', 'display', 'sans-serif'],
         mont: ['Montserrat', 'sans-serif'],
-        smuy: ['"Seymour One"', 'sans-serif'],
       },
       colors: {
         'x-bg': '#222',
