@@ -3,6 +3,8 @@ import Logo from '@/assets/images/logoBig.svg'
 import { Phone } from '@/components/Phone/Phone'
 import Button from '@/components/Button/Button.component'
 import { UnderConstruction } from '@/components/UnderConstruction'
+import Image from 'next/image'
+import phoneCover from '@/assets/images/phone-cover.png'
 
 const Home = () => {
   return (
@@ -70,10 +72,13 @@ const Home = () => {
         </section>
         <section className='pb-8 xl:p-16 rotate-0 xl:rotate-[6deg]'>
           <Phone>
-            <iframe
-              src='https://foxy.talkiiing.ru'
-              className='w-full h-full bg-white py-2'
-            />
+            <div className='w-full h-full overflow-y-hidden bg-white py-2'>
+              <Image
+                src={phoneCover}
+                className='w-full h-full select-none'
+                alt='foxy auth page'
+              />
+            </div>
           </Phone>
         </section>
       </article>
