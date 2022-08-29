@@ -1,12 +1,7 @@
 import Logo from '@/assets/images/logoBig.svg'
 import Button from '@/components/Button/Button.component'
 import { $fetch } from 'ohmyfetch'
-
-const sendButtonClick = () =>
-  $fetch('https://foxy.s.talkiiing.ru/api/metrics/buttonClickEvent', {
-    method: 'POST',
-    body: { delay: performance.now() },
-  })
+import { sendButtonClick } from '@/services/sendButtonClick'
 
 export const UnderConstruction = () => {
   return (
