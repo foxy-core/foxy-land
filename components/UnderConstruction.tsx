@@ -7,18 +7,15 @@ export const UnderConstruction = () => {
   return (
     <div className='w-full h-full pt-16 pb-2 flex flex-col space-y-8 items-center bg-x-bg'>
       <Logo className='h-12' />
-      <span className='font-mont font-bold text-3xl text-x-orange-400'>
-        Привет!
-      </span>
       <span className='text-x-white font-mont text-center text-xl pt-6 px-2'>
         Мы{' '}
         <b>
           все еще разрабатываем{' '}
-          <span className='text-x-orange-400 tracking-wide'>Foxy</span>
+          <span className='text-x-orange-400 tracking-wide'>🦊&nbsp;Foxy</span>
         </b>
-        , но <b>уже сейчас ты можешь написать</b> нашему боту в{' '}
-        <span className='text-[#0088cc] tracking-wide'>Telegram</span>, чтобы он
-        прислал напоминалку, когда мы откроемся!
+        , но <b>уже сейчас ты&nbsp;можешь написать</b> нашему&nbsp;боту в&nbsp;
+        <span className='text-[#0088cc] tracking-wide'>Telegram</span>,
+        чтобы&nbsp;он прислал напоминалку, когда&nbsp;мы&nbsp;откроемся!
       </span>
 
       <Button
@@ -33,7 +30,7 @@ export const UnderConstruction = () => {
       </Button>
 
       <span className='text-x-gray-400 font-mont text-center text-sm py-6 px-2'>
-        А еще этот бот при открытии подарит вам пару крутых фишек)
+        А еще этот бот при открытии подарит вам пару крутых фишек 😉
       </span>
     </div>
   )

@@ -58,12 +58,12 @@ const Home = () => {
         <meta name='language' content='ru' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <article className='flex flex-col space-y-6 xl:space-y-0 w-full items-center xl:h-screen xl:flex-row px-4 xl:px-12 overflow-y-hidden'>
-        <section className='flex flex-col justify-start xl:justify-start xl:pb-40 pt-8 lg:pt-16 xl:pt-0 px-4 xl:px-0 items-center xl:items-start'>
-          <h3 className='order-2 xl:order-1 tracking-wide text-x-orange-400 pb-4 text-base lg:text-xl xl:text-2xl text-center xl:text-left'>
-            Присоединяйся сейчас, это&nbsp;очень&nbsp;просто!
+      <article className='flex flex-col space-y-6 xl:space-y-0 w-full items-center xl:h-[calc(100vh-6rem)] xl:flex-row px-4 xl:px-12'>
+        <section className='flex flex-col justify-start xl:justify-start xl:pb-32 pt-8 lg:pt-16 xl:pt-0 px-4 xl:px-0 items-center xl:items-start'>
+          <h3 className='order-2 xl:order-1 tracking-wide text-x-orange-400 pb-4 text-base lg:text-xl xl:text-xl text-center xl:text-left'>
+            Присоединяйся&nbsp;сейчас!
           </h3>
-          <h1 className='order-1 xl:order-2 pb-6 text-5xl lg:text-3xl xl:text-8xl text-center xl:text-left'>
+          <h1 className='order-1 xl:order-2 pb-6 text-5xl lg:text-5xl xl:text-8xl text-center xl:text-left'>
             Made for&nbsp;people to&nbsp;connect
           </h1>
           <h3 className='order-3 pb-2 text-x-gray-400 text-sm lg:text-xl xl:text-2xl text-center xl:text-left'>
@@ -77,18 +77,18 @@ const Home = () => {
             }}
             className='order-last !mt-8 mb-4'
           >
-            <p className='px-7  font-mont text-lg font-bold'>
+            <p className='px-7 py-2 font-mont text-lg font-bold'>
               Подписаться на открытие
             </p>
           </Button>
         </section>
-        <section className='pb-8 xl:p-16 rotate-0 xl:rotate-[6deg]'>
+        <section className='pb-8 xl:pb-16 xl:px-16 rotate-0 xl:rotate-[6deg]'>
           <Phone>
-            <div className='w-full h-full overflow-y-hidden bg-white py-2'>
+            <div className='w-full h-full overflow-y-hidden'>
               <Image
                 src={phoneCover}
                 className='w-full h-full select-none'
-                alt='foxy auth page'
+                alt='foxy'
               />
             </div>
           </Phone>

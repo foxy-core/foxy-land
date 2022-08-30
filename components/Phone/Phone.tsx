@@ -13,7 +13,7 @@ export const Phone: FC<PropsWithChildren> = ({ children }) => {
         width={336}
       />
       <div className='absolute top-0 w-full h-full px-[1rem] py-[1rem] select-auto'>
-        <div className='rounded-[36px] w-full h-full bg-red-400 transform-translate translate-y-[-2px] overflow-x-hidden'>
+        <div className='rounded-[36px] w-full h-full transform-translate translate-y-[-2px] overflow-x-hidden'>
           {children}
         </div>
       </div>

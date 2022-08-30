@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         syne: ['Syne', 'display', 'sans-serif'],
-        mont: ['Montserrat', 'sans-serif'],
+        mont: ['Lato', 'sans-serif'],
       },
       colors: {
         'x-bg': '#222',
