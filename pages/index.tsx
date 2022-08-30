@@ -58,15 +58,15 @@ const Home = () => {
         <meta name='language' content='ru' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <article className='flex flex-col space-y-6 xl:space-y-0 w-full items-center xl:h-[calc(100vh-6rem)] xl:flex-row px-4 xl:px-12'>
-        <section className='flex flex-col justify-start xl:justify-start xl:pb-32 pt-8 lg:pt-16 xl:pt-0 px-4 xl:px-0 items-center xl:items-start'>
+      <article className='flex flex-col space-y-6 xl:space-y-0 w-full items-center xl:min-h-[700px] xl:h-[calc(100vh-6rem)] xl:flex-row px-4 xl:px-12'>
+        <section className='flex flex-col justify-start xl:justify-start pt-8 lg:pt-16 xl:pt-0 px-4 xl:px-0 items-center xl:items-start'>
           <h3 className='order-2 xl:order-1 tracking-wide text-x-orange-400 pb-4 text-base lg:text-xl xl:text-xl text-center xl:text-left'>
             Присоединяйся&nbsp;сейчас!
           </h3>
           <h1 className='order-1 xl:order-2 pb-6 text-5xl lg:text-5xl xl:text-8xl text-center xl:text-left'>
             Made for&nbsp;people to&nbsp;connect
           </h1>
-          <h3 className='order-3 pb-2 text-x-gray-400 text-sm lg:text-xl xl:text-2xl text-center xl:text-left'>
+          <h3 className='order-3 pb-2 text-x-gray-400 text-sm lg:text-xl xl:text-xl text-center xl:text-left'>
             Приложение для&nbsp;знакомств, которое и&nbsp;вправду дает
             больше&nbsp;свободы
           </h3>
@@ -82,7 +82,7 @@ const Home = () => {
             </p>
           </Button>
         </section>
-        <section className='pb-8 xl:pb-16 xl:px-16 rotate-0 xl:rotate-[6deg]'>
+        <section className='pb-8 xl:pb-16 xl:px-16 xl:pt-8 rotate-0 xl:rotate-[6deg]'>
           <Phone>
             <div className='w-full h-full overflow-y-hidden'>
               <Image
@@ -94,7 +94,7 @@ const Home = () => {
           </Phone>
         </section>
       </article>
-      <section className='w-full min-h-[20rem] bg-x-orange-300 flex flex-col items-center py-16 px-2'>
+      <section className='w-full min-h-[20rem] flex flex-col items-center py-32 px-2'>
         <div className='bg-x-bg max-w-md px-4'>
           <UnderConstruction />
         </div>

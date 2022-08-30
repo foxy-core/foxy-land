@@ -7,17 +7,15 @@ export const Footer = () => {
   return (
     <footer className='w-full bg-x-gray-300 bg-opacity-[.05] py-4'>
       <div className='flex flex-col space-y-6 items-center pt-4'>
-        <Link href='#b'>
+        <Link href='terms-of-use/'>
           <p className='cursor-pointer text-center'>Terms of Use</p>
         </Link>
         <div className='flex space-x-6 items-center'>
           <div className='cursor-pointer'>
-            <Link href='#b'>
-              <Twitter className='h-6 w-6' />
-            </Link>
-          </div>
-          <div className='cursor-pointer'>
-            <Link href='#b' className='cursor-pointer'>
+            <Link
+              href='https://github.com/foxy-core'
+              className='cursor-pointer'
+            >
               <Github className='h-6 w-6' />
             </Link>
           </div>
