@@ -6,8 +6,19 @@ import { UnderConstruction } from '@/components/UnderConstruction'
 import Image from 'next/image'
 import phoneCover from '@/assets/images/phone-cover.png'
 import { sendButtonClick } from '@/services/sendButtonClick'
+import { useEffect } from 'react'
+import Plausible from 'plausible-tracker'
+
+const plausible = Plausible({
+  domain: 'talkiiing.ru',
+  apiHost: 'https://analytic.s.talkiiing.ru',
+})
 
 const Home = () => {
+  useEffect(() => {
+    plausible.enableAutoPageviews()
+  }, [])
+
   return (
     <>
       <Head>
@@ -74,6 +85,11 @@ const Home = () => {
             onClick={() => {
               window.open('https://t.me/FoxyAuthBot')
               sendButtonClick()
+              plausible.trackEvent('botButtonClick', {
+                props: {
+                  placement: 'top',
+                },
+              })
             }}
             className='order-last !mt-8 mb-4'
           >
@@ -96,7 +112,15 @@ const Home = () => {
       </article>
       <section className='w-full min-h-[20rem] flex flex-col items-center py-32 px-2'>
         <div className='bg-x-bg max-w-md px-4'>
-          <UnderConstruction />
+          <UnderConstruction
+            onClick={() =>
+              plausible.trackEvent('botButtonClick', {
+                props: {
+                  placement: 'underConstruction',
+                },
+              })
+            }
+          />
         </div>
       </section>
     </>

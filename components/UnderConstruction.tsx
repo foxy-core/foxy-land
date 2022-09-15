@@ -3,7 +3,11 @@ import Button from '@/components/Button/Button.component'
 import { $fetch } from 'ohmyfetch'
 import { sendButtonClick } from '@/services/sendButtonClick'
 
-export const UnderConstruction = () => {
+export const UnderConstruction = ({
+  onClick,
+}: {
+  onClick: CallableFunction
+}) => {
   return (
     <div className='w-full h-full pt-12 pb-2 px-4 flex flex-col space-y-8 items-center bg-x-white rounded-2xl shadow-3xl shadow-black'>
       <Logo className='h-12' />
@@ -22,6 +26,7 @@ export const UnderConstruction = () => {
         onClick={() => {
           window.open('https://t.me/FoxyAuthBot')
           sendButtonClick()
+          onClick()
         }}
       >
         <p className='px-7 py-2 font-mont text-lg font-bold'>

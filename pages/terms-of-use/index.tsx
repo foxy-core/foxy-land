@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { UnderConstruction } from '@/components/UnderConstruction'
 import Link from 'next/link'
 
 const TermsOfUse = () => {
